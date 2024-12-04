@@ -1,0 +1,102 @@
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\appsettings.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.staticwebassets.runtime.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.exe
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.deps.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.runtimeconfig.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.pdb
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.AssemblyInfoInputs.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.AssemblyInfo.cs
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.csproj.CoreCompileInputs.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.RazorAssemblyInfo.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.RazorAssemblyInfo.cs
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.sourcelink.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.PassportsApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.build.PassportsApp.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PassportsApp.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PassportsApp.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\scopedcss\bundle\PassportsApp.styles.css
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\scopedcss\projectbundle\PassportsApp.bundle.scp.css
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\refint\PassportsApp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.pdb
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.genruntimeconfig.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\ref\PassportsApp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.csproj.AssemblyReference.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.AssemblyInfoInputs.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.AssemblyInfo.cs
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.csproj.CoreCompileInputs.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.RazorAssemblyInfo.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.RazorAssemblyInfo.cs
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.sourcelink.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\refint\PassportsApp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.pdb
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\appsettings.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.staticwebassets.runtime.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.exe
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.deps.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.runtimeconfig.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.pdb
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\MySql.EntityFrameworkCore.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.PassportsApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.build.PassportsApp.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PassportsApp.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.PassportsApp.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\scopedcss\bundle\PassportsApp.styles.css
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\scopedcss\projectbundle\PassportsApp.bundle.scp.css
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\Passport.26FD74AC.Up2Date
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\PassportsApp.genruntimeconfig.cache
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\ref\PassportsApp.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\bin\Debug\net6.0\PassportsApp.staticwebassets.endpoints.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets\msbuild.PassportsApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

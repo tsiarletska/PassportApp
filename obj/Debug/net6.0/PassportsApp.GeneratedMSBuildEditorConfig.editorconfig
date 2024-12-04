@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PassportsApp
+build_property.RootNamespace = PassportsApp
+build_property.ProjectDir = C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Lesia\OneDrive\Desktop\hnure_labs\7th_semester\.net\app\PassportsApp\PassportsApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Country/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Management/AddRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxBZGRSZWNvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Management/DeleteRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxEZWxldGVSZWNvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Management/EditRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxFZGl0UmVjb3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Management/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Management/Save.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxTYXZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Management/SaveEditedRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxTYXZlRWRpdGVkUmVjb3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/PassportType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc3BvcnRUeXBlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/SearchResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xTZWFyY2hSZXN1bHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/ViewAllAuthorities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xWaWV3QWxsQXV0aG9yaXRpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/ViewAllCountries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xWaWV3QWxsQ291bnRyaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/ViewAllHolders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xWaWV3QWxsSG9sZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/ViewAllPassportHolders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xWaWV3QWxsUGFzc3BvcnRIb2xkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/ViewAllPassports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xWaWV3QWxsUGFzc3BvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/ViewAllSex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xWaWV3QWxsU2V4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Reviews/ViewAllTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3c1xWaWV3QWxsVHlwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lesia/OneDrive/Desktop/hnure_labs/7th_semester/.net/app/PassportsApp/PassportsApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-l10x3x86ae
