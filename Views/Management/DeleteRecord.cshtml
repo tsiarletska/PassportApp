@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Delete Record";
+}
+
+<h1>Delete Record</h1>
+
+<div style="margin-bottom: 20px;">
+    <p>Select a table to delete a record from:</p>
+    <button class="table-button" data-table="Passport">Таблиця "Паспорт"</button>
+    <button class="table-button" data-table="PassportHolder">Таблиця "Власник паспорту"</button>
+    <button class="table-button" data-table="Country">Таблиця "Країна"</button>
+    <button class="table-button" data-table="PassportType">Таблиця "Тип паспорту"</button>
+    <button class="table-button" data-table="Sex">Таблиця "Стать"</button>
+    <button class="table-button" data-table="Authority">Таблиця "Установа"</button>
+</div>
+
+<div id="form-container" style="display: none; margin-top: 20px;">
+    <h3 id="table-title" style="margin-bottom: 10px;"></h3>
+
+    <form asp-action="DeleteRecord" method="post">
+        <input type="hidden" name="table" id="table-name" />
+
+        <div style="margin-bottom: 15px;">
+            <label for="primaryKeyInput" style="font-weight: bold;">Enter Primary Key:</label>
+            <input type="text" name="id" id="primaryKeyInput" placeholder="Enter the primary key (e.g., passport_id)"
+                   style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" required />
+        </div>
+
+        <button class="btn btn-danger" type="submit" style="margin-top: 10px;">Delete Record</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tableButtons = document.querySelectorAll('.table-button');
+        const formContainer = document.getElementById('form-container');
+        const tableTitle = document.getElementById('table-title');
+        const tableNameInput = document.getElementById('table-name');
+
+        tableButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const table = this.dataset.table;
+                formContainer.style.display = 'block';
+                tableTitle.textContent = `Видалення запису з таблиці ${table}`;
+                tableNameInput.value = table;
+            });
+        });
+    });
+</script>
+
+<style>
+    .table-button {
+        padding: 10px 20px;
+        border: 1px solid #f44336;
+        background-color: #f44336;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .table-button:hover {
+            background-color: #c62828;
+        }
+
+    .btn-danger {
+        background-color: #e53935;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #b71c1c;
+        }
+</style>

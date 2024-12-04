@@ -1,0 +1,121 @@
+﻿<style>
+    body {
+        font-family: 'Roboto', sans-serif; /* Set the font to Roboto */
+        background-color: #FEFBF6; /* Change background color */
+    }
+
+    .custom-table {
+        display: flex;
+        justify-content: center; /* Center the table horizontally */
+        margin-top: 20px; /* Add some margin at the top */
+    }
+
+    .table {
+        width: 80%; /* Adjust table width */
+        border-collapse: collapse; /* Remove extra space between table borders */
+        background-color: white; /* Table background color */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for better visibility */
+    }
+
+    th, td {
+        text-align: left;
+        padding: 12px 16px; /* Add padding inside cells */
+        border: 1px solid #ddd; /* Add a light border */
+    }
+
+    th {
+        background-color: #f2f2f2; /* Slightly darker header background */
+        font-weight: bold; /* Bold text for headers */
+    }
+
+    tr:nth-child(odd) {
+        background-color: #d1e9f6; /* Zebra striping for odd rows */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9; /* Zebra striping for even rows */
+    }
+
+    tr:hover {
+        background-color: #f1f1f1; /* Highlight row on hover */
+    }
+</style>
+
+
+
+
+
+<div class="custom-table">
+    <table class="table table-hover" id="passportTable">
+        <thead>
+            <tr>
+                <th class="sortable" data-column="CountryCode">Country Code<span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="CountryName">Country Name<span class="sort-arrow"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var countries in Model)
+            {
+                <tr>
+                    <td>@countries.CountryCode</td>
+                    <td>@countries.CountryName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const table = document.getElementById('passportTable');
+        const headers = table.querySelectorAll('.sortable');
+
+        headers.forEach(header => {
+            header.addEventListener('click', function() {
+                const column = this.getAttribute('data-column');
+                const currentSort = this.classList.contains('sort-asc') ? 'asc' :
+                                   this.classList.contains('sort-desc') ? 'desc' : null;
+
+                // Reset all headers
+                headers.forEach(h => {
+                    h.classList.remove('sort-asc', 'sort-desc');
+                });
+
+                // Determine new sort direction
+                let newSort = currentSort === 'asc' ? 'desc' : 'asc';
+                this.classList.add(`sort-${newSort}`);
+
+                // Sort the rows
+                const rows = Array.from(table.querySelectorAll('tbody tr'));
+                rows.sort((a, b) => {
+                    const aValue = a.querySelector(`td:nth-child(${Array.from(headers).indexOf(this) + 1})`).textContent;
+                    const bValue = b.querySelector(`td:nth-child(${Array.from(headers).indexOf(this) + 1})`).textContent;
+
+                    // Handle different data types    // eleted here second colunn from
+                    if (column === 'Birthday') {
+                        return newSort === 'asc'
+                            ? new Date(aValue) - new Date(bValue)
+                            : new Date(bValue) - new Date(aValue);
+                    }
+
+                    return newSort === 'asc'
+                        ? aValue.localeCompare(bValue)
+                        : bValue.localeCompare(aValue);
+                });
+
+                // Reinsert sorted rows
+                const tbody = table.querySelector('tbody');
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+    });
+</script>@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}

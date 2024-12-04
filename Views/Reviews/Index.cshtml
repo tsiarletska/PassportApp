@@ -1,0 +1,108 @@
+﻿@model IEnumerable<PassportsApp.Models.Passport>
+@{
+    var bgColor = "#F2EFE9"; /* Updated background color */
+    var rowAltColor = "#fff";
+    var textColor = "#333";
+}
+<style>
+    body {
+        background-color: @bgColor;
+    }
+
+    .page-buttons {
+        display: flex;
+        justify-content: start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 12px 25px; /* Increased button size */
+        font-size: 16px; /* Increased font size */
+        font-weight: bold;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background-color: #aedb6b;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .btn-blue {
+        background-color: #007bff; /* Blue color for the search button */
+        color: white;
+    }
+
+    .search-container {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+        .search-container input {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    .header-container h1 {
+        font-size: 28px; /* Header text size */
+        color: @textColor;
+        margin-bottom: 15px;
+    }
+
+    .header-container p {
+        font-size: 16px; /* Paragraph text size */
+        color: @textColor;
+    }
+</style>
+
+<div class="page-buttons">
+    <button class="btn btn-primary" onclick="window.location.href='/Reviews/ViewAllPassports'">View All Passports</button>
+    <button class="btn btn-primary" onclick="window.location.href='/Reviews/ViewAllHolders'">View All Passport Holders</button>
+    <button class="btn btn-primary" onclick="window.location.href='/Reviews/ViewAllCountries'">View All Countries</button>
+    <button class="btn btn-primary" onclick="window.location.href='/Reviews/ViewAllTypes'">View All Passport Types</button>
+    <button class="btn btn-primary" onclick="window.location.href='/Reviews/ViewAllSex'">View All Sex</button>
+    <button class="btn btn-primary" onclick="window.location.href='/Reviews/ViewAllAuthorities'">View All Authorities</button>
+</div>
+
+     @* /*   <div class="search-container"> *@
+    @* <input type="text" class="form-control" placeholder="Search across all tables..." id="searchInput"> *@
+    @* <button class="btn btn-blue" onclick="performSearch()">Search</button> *@
+@* </div> *@
+
+<form method="get" action="/Reviews/Search" class="search-container">
+    <input type="text" name="term" class="form-control" placeholder="Search across all tables..." required>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+
+
+<div class="header-container">
+    <h1>Вітаємо на сторінці перегляду</h1>
+    <p>
+        Натискаючи на певну кнопку зверху цієї сторінки, Ви можете переглянути записи у таблицях бази даних. Для пошуку скористайтесь полем пошуку.
+        Результат розгорнеться у окремій сторінці. 
+    </p>
+</div>
+
+<script>
+    function performSearch() {
+        const searchTerm = document.getElementById('searchInput').value;
+        if (!searchTerm) {
+            alert("Please enter a search term.");
+            return;
+        }
+
+        // Redirect to a search results page (you'll implement the logic for handling this on the backend)
+        window.location.href = `/Reviews/Search?term=${encodeURIComponent(searchTerm)}`;
+    }
+</script>

@@ -1,0 +1,87 @@
+﻿<div class="custom-table">
+    <table class="table table-hover" id="passportTable">
+        <thead>
+            <tr>
+                <th class="sortable" data-column="HolderId">Holder Id <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="PassportId">Passport Id <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="HolderName">Holder Name <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="HolderSurname">Holder Surname <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="PatronymicMatronymic">PIB <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="Birthday">Birthday <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="SexAbr">Sex <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="BirthPlace"> Birth Place <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="Citizenship"> Citizenship <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="Signature"> Signature Path <span class="sort-arrow"></span></th>
+                <th class="sortable" data-column="HolderPhoto"> Photo Path <span class="sort-arrow"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var holders in Model)
+            {
+                <tr>
+                    <td>@holders.HolderId</td>
+                    <td>@holders.PassportId</td>
+                    <td>@holders.HolderName</td>
+                    <td>@holders.HolderSurname</td>
+                    <td>@holders.PatronymicMatronymic</td>
+                    <td>@holders.Birthday.ToShortDateString()</td>
+                    <td>@holders.SexAbr</td>
+                    <td>@holders.BirthPlace</td>
+                    <td>@holders.Citizenship</td>
+                    <td>@holders.Signature</td>
+                    <td>@holders.HolderPhoto</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const table = document.getElementById('passportTable');
+        const headers = table.querySelectorAll('.sortable');
+
+        headers.forEach(header => {
+            header.addEventListener('click', function() {
+                const column = this.getAttribute('data-column');
+                const currentSort = this.classList.contains('sort-asc') ? 'asc' :
+                                   this.classList.contains('sort-desc') ? 'desc' : null;
+
+                // Reset all headers
+                headers.forEach(h => {
+                    h.classList.remove('sort-asc', 'sort-desc');
+                });
+
+                // Determine new sort direction
+                let newSort = currentSort === 'asc' ? 'desc' : 'asc';
+                this.classList.add(`sort-${newSort}`);
+
+                // Sort the rows
+                const rows = Array.from(table.querySelectorAll('tbody tr'));
+                rows.sort((a, b) => {
+                    const aValue = a.querySelector(`td:nth-child(${Array.from(headers).indexOf(this) + 1})`).textContent;
+                    const bValue = b.querySelector(`td:nth-child(${Array.from(headers).indexOf(this) + 1})`).textContent;
+
+                    // Handle different data types    // eleted here second colunn from
+                    if (column === 'Birthday') {
+                        return newSort === 'asc'
+                            ? new Date(aValue) - new Date(bValue)
+                            : new Date(bValue) - new Date(aValue);
+                    }
+
+                    return newSort === 'asc'
+                        ? aValue.localeCompare(bValue)
+                        : bValue.localeCompare(aValue);
+                });
+
+                // Reinsert sorted rows
+                const tbody = table.querySelector('tbody');
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+    });
+</script>@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}

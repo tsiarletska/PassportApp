@@ -1,0 +1,417 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .btn-primary {
+        background-color: #4caf50;
+    }
+
+    .btn-warning {
+        background-color: #ff9800;
+    }
+
+    .btn-danger {
+        background-color: #f44336;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+</style>
+
+
+<h1>Add a New Record</h1>
+
+<h3 style="text-align: center; color: #000000;">Створення запису про новий закордонний паспорт</h3>
+
+<form asp-action="Save" method="post">
+
+    <input type="hidden" name="type" value="Passport" />
+
+    <div style="margin-bottom: 15px;">
+        <label for="attribute1" style="display: block; font-weight: bold;">Passport Id:</label>
+        <input type="text"
+               id="attribute1"
+               name="PassportId"
+               placeholder="Уведіть унікальни номер нового документа"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Passport Type:</label>
+        <input type="text"
+               id="attribute2"
+               name="PassportType"
+               placeholder="Вкажіть тип паспорту"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute3" style="display: block; font-weight: bold;">Issue Date:</label>
+        <input type="text"
+               id="attribute3"
+               name="IssueDate"
+               placeholder="Уведіть дату видачі паспорту"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute4" style="display: block; font-weight: bold;">Expiration Date:</label>
+        <input type="text"
+               id="attribute4"
+               name="ExpirationDate"
+               placeholder="Уведіть дату кінця завершення дії паспорту"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute5" style="display: block; font-weight: bold;">Authority Id:</label>
+        <input type="text"
+               id="attribute5"
+               name="AuthorityId"
+               placeholder="Уведіть айди установи, що видала документ"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>   
+    <button class="btn btn-primary" type="submit" style="background-color: #28a745; border-color: #28a745;">Save</button>
+</form>
+<br />
+<br />
+
+<h3 style="text-align: center; color: #000000;">Створення запису про власника паспорту</h3>
+
+<form asp-action="Save" method="post">
+    <input type="hidden" name="type" value="PassportHolder" />
+    <div style="margin-bottom: 15px;">
+        <label for="attribute12" style="display: block; font-weight: bold;">Holder Id:</label>
+        <input type="text"
+               id="attribute12"
+               name="HolderId"
+               placeholder="Уведіть унікальний ідентифікаційний код особи"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute13" style="display: block; font-weight: bold;">PassportId:</label>
+        <input type="text"
+               id="attribute13"
+               name="PassportId"
+               placeholder="Вкажіть код паспорту як у попередній формі"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute14" style="display: block; font-weight: bold;">HolderName:</label>
+        <input type="text"
+               id="attribute14"
+               name="HolderName"
+               placeholder="Вкажіть ім'я власника документа латинкою"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">HolderSurname:</label>
+        <input type="text"
+               id="attribute2"
+               name="HolderSurname"
+               placeholder="Вкажіть прізвище власника документів"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">PatronymicMatronymic:</label>
+        <input type="text"
+               id="attribute2"
+               name="PatronymicMatronymic"
+               placeholder="Вкажіть по батькови / по матері власника паспорта"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Birthday:</label>
+        <input type="text"
+               id="attribute2"
+               name="Birthday"
+               placeholder="Зазначте дату народження власника"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Sex:</label>
+        <input type="text"
+               id="attribute2"
+               name="Sex"
+               placeholder="Зазначте стать власника"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">BirthPlace:</label>
+        <input type="text"
+               id="attribute2"
+               name="BirthPlace"
+               placeholder="Зазначте населений пункт, в котрому народилась особа"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Citizenship:</label>
+        <input type="text"
+               id="attribute2"
+               name="Citizenship"
+               placeholder="Зазначте код країни, в якій особа має громадянство"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Signature:</label>
+        <input type="text"
+               id="attribute2"
+               name="Signature"
+               placeholder="Зазначте назу файлу з підписом власника"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">HolderPhoto:</label>
+        <input type="text"
+               id="attribute2"
+               name="HolderPhoto"
+               placeholder="Вкажіть покликання на файл зі світлиною власника"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+
+    <button class="btn btn-primary" type="submit" style="background-color: #28a745; border-color: #28a745;">Save</button>
+</form>
+
+<br /> <br />
+
+<h3 style="text-align: center; color: #000000;">Створення запису про нову установу видачі закордонних паспортів</h3>
+
+<br />
+<br />
+
+<form asp-action="Save" method="post">
+    <input type="hidden" name="type" value="Authority" />
+    <div style="margin-bottom: 15px;">
+        <label for="attribute12" style="display: block; font-weight: bold;">Authority Id:</label>
+        <input type="text"
+               id="attribute12"
+               name="Attribute12"
+               placeholder="Уведіть унікальний ідентифікаційний код нової установи видачі документів"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute13" style="display: block; font-weight: bold;">Country code:</label>
+        <input type="text"
+               id="attribute13"
+               name="Attribute13"
+               placeholder="Уведіть код країни, у котрій розташована установа (з існуючих у таблиці Країна)"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute14" style="display: block; font-weight: bold;">Сity:</label>
+        <input type="text"
+               id="attribute14"
+               name="Attribute14"
+               placeholder="Вкажіть місто, в якому розташована установа"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Street:</label>
+        <input type="text"
+               id="attribute2"
+               name="Attribute2"
+               placeholder="Уведіть назву вулиці з адреси розташовуання установи"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">House Number</label>
+        <input type="text"
+               id="attribute2"
+               name="Attribute2"
+               placeholder="Уведіть номер будинку, в якому розташована установа"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Phone</label>
+        <input type="text"
+               id="attribute2"
+               name="Attribute2"
+               placeholder="Уведіть номер телефону установи"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Email</label>
+        <input type="text"
+               id="attribute2"
+               name="Attribute2"
+               placeholder="Вкажіть контактний номер телефону"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute2" style="display: block; font-weight: bold;">Establishment Date</label>
+        <input type="text"
+               id="attribute2"
+               name="Attribute2"
+               placeholder="Уведіть дату створення установи у форматі: ДД/ММ/РРРР"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <button class="btn btn-primary" type="submit" style="background-color: #28a745; border-color: #28a745;">Save</button>
+</form>
+
+<br />
+<br />
+
+
+<h3 style="text-align: center; color: #000000;">Створення запису про нову країну</h3>
+
+<br />
+<br />
+
+<form asp-action="Save" method="post">
+    <input type="hidden" name="type" value="Country" />
+
+    <div style="margin-bottom: 15px;">
+        <label for="attribute12" style="display: block; font-weight: bold;">Country Code:</label>
+        <input type="text"
+               id="attribute12"
+               name="Attribute12"
+               placeholder="Уведіть код нової країни відповідно до міжнародними стандартами"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />    
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute13" style="display: block; font-weight: bold;">Country Name:</label>
+        <input type="text"
+               id="attribute13"
+               name="Attribute13"
+               placeholder="Уведіть повну назву нової країни за міжнародними стандартами:"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+
+    <button class="btn btn-primary" type="submit" style="background-color: #28a745; border-color: #28a745;">Save</button>
+</form>
+
+
+
+<br />
+<br />
+
+
+
+
+<h3 style="text-align: center; color: #000000;">Створення запису про нову стать</h3>
+
+<br />
+<br />
+
+<form asp-action="Save" method="post">
+    <input type="hidden" name="type" value="Sex" />
+
+    <div style="margin-bottom: 15px;">
+        <label for="attribute12" style="display: block; font-weight: bold;">Sex Abbreviation:</label>
+        <input type="text"
+               id="attribute12"
+               name="Attribute12"
+               placeholder="Уведіть першу літеру стать за міжнародними стандартами"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+    <div style="margin-bottom: 15px;">
+        <label for="attribute13" style="display: block; font-weight: bold;">Full Sex:</label>
+        <input type="text"
+               id="attribute13"
+               name="Attribute13"
+               placeholder="Уведіть повну назву нової статі за міжнародними стандартами:"
+               required
+               style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+    </div>
+   
+    <button class="btn btn-primary" type="submit" style="background-color: #28a745; border-color: #28a745;">Save</button>
+</form>
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const attribute1 = document.getElementById('attribute1').value;
+
+            
+            const isDuplicate = await checkIfDuplicatePK(attribute1);
+            if (isDuplicate) {
+                alert("Value can't be repeated");
+                return;
+            }
+
+            form.submit();
+        });
+
+
+        async function checkIfDuplicatePK(value) {
+            const mockDatabase = ["PK1", "PK2", "PK3"];
+            return mockDatabase.includes(value);
+        }
+    });
+</script>

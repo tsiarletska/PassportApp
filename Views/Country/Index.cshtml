@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1> Hello Index!!!</h1>
+
+
+@model IEnumerable<PassportsApp.Models.Country>
+
+<h2>Countries</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Country Code</th>
+            <th>Country Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var country in Model)
+        {
+            <tr>
+                <td>@country.CountryCode</td>
+                <td>@country.CountryName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create", "Country")" class="btn btn-primary">Add New Country</a>

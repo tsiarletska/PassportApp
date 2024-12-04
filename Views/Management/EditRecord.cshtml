@@ -1,0 +1,157 @@
+﻿@{
+    ViewData["Title"] = "Edit Record";
+}
+
+<h1>Edit Record</h1>
+
+<div style="margin-bottom: 20px;">
+    <p>Select a table to edit its records:</p>
+    <button class="table-button" data-table="Passport">Таблиця "Паспорт"</button>
+    <button class="table-button" data-table="PassportHolder">Таблиця "Власник паспорту"</button>
+    <button class="table-button" data-table="Country">Таблиця "Країна"</button>
+    <button class="table-button" data-table="PassportType">Таблиця "Тип паспорту"</button>
+    <button class="table-button" data-table="Sex">Таблиця "Стать"</button>
+    <button class="table-button" data-table="Authority">Таблиця "Установа"</button>
+</div>
+
+<div id="form-container" style="display: none; margin-top: 20px;">
+    <h3 id="table-title" style="margin-bottom: 10px;"></h3>
+
+    <div style="margin-bottom: 20px;">
+        <label for="primaryKeyInput" style="font-weight: bold;">Enter Primary Key:</label>
+        <input type="text" id="primaryKeyInput" placeholder="Enter the primary key (e.g., PassportId)" style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;">
+        <button id="fetchRecordButton" style="margin-top: 10px; background-color: #8442f5; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Fetch Record</button>
+    </div>
+
+    <form asp-action="SaveEditedRecord" method="post" id="editForm" style="display: none;">
+        <input type="hidden" name="table" value="" id="table-name" />
+        <div id="form-fields"></div>
+        <button class="btn btn-success" type="submit" style="margin-top: 20px;">Save Changes</button>
+    </form>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tableButtons = document.querySelectorAll('.table-button');
+        const formContainer = document.getElementById('form-container');
+        const tableTitle = document.getElementById('table-title');
+        const primaryKeyInput = document.getElementById('primaryKeyInput');
+        const fetchRecordButton = document.getElementById('fetchRecordButton');
+        const formFields = document.getElementById('form-fields');
+        const editForm = document.getElementById('editForm');
+        const tableNameInput = document.getElementById('table-name');
+
+        const tableSchemas = {
+            Passport: [
+                { name: 'PassportId', label: 'Passport ID', readonly: true },
+                { name: 'Type', label: 'Type', readonly: false },
+                { name: 'IssueDate', label: 'Issue Date', readonly: false },
+                { name: 'ExpirationDate', label: 'Expiration Date', readonly: false },
+                { name: 'AuthorityId', label: 'Authority ID', readonly: false }
+            ],
+            PassportHolder: [
+                { name: 'HolderId', label: 'Holder ID', readonly: true },
+                { name: 'PassportId', label: 'Passport ID', readonly: true },
+                { name: 'HolderName', label: 'Holder Name', readonly: false },
+                { name: 'HolderSurname', label: 'Holder Surname', readonly: false },
+                { name: 'PatronymicMatronymic', label: 'Patronymic/Matronymic', readonly: false },
+                { name: 'Birthday', label: 'Birthday', readonly: false },
+                { name: 'SexAbr', label: 'Sex Abbreviation', readonly: false },
+                { name: 'BirthPlace', label: 'Birth Place', readonly: false },
+                { name: 'Citizenship', label: 'Citizenship', readonly: false },
+                { name: 'Signature', label: 'Signature', readonly: false },
+                { name: 'HolderPhoto', label: 'Holder Photo', readonly: false }
+            ],
+            Country: [
+                { name: 'CountryCode', label: 'Country Code', readonly: true },
+                { name: 'CountryName', label: 'Country Name', readonly: false }
+            ],
+            PassportType: [
+                { name: 'PassportTypeAbr', label: 'Passport Type Abbreviation', readonly: true },
+                { name: 'PassportTypeDesc', label: 'Passport Type Description', readonly: false }
+            ],
+            Sex: [
+                { name: 'SexAbr', label: 'Sex Abbreviation', readonly: true },
+                { name: 'FullSex', label: 'Full Sex', readonly: false }
+            ],
+            Authority: [
+                { name: 'AutorityId', label: 'Authority ID', readonly: true },
+                { name: 'CountryCode', label: 'Country Code', readonly: false },
+                { name: 'City', label: 'City', readonly: false },
+                { name: 'Street', label: 'Street', readonly: false },
+                { name: 'HouseNum', label: 'House Number', readonly: false },
+                { name: 'Phone', label: 'Phone', readonly: false },
+                { name: 'Email', label: 'Email', readonly: false },
+                { name: 'EstablishmentDate', label: 'Establishment Date', readonly: false }
+            ]
+        };
+
+        let selectedTable = null;
+
+        tableButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                selectedTable = this.dataset.table;
+                formContainer.style.display = 'block';
+                editForm.style.display = 'none';
+                formFields.innerHTML = '';
+                primaryKeyInput.value = '';
+                tableTitle.textContent = `Редагування запису у таблиці ${selectedTable}`;
+                tableNameInput.value = selectedTable;
+            });
+        });
+
+        fetchRecordButton.addEventListener('click', function () {
+            if (!selectedTable) {
+                alert('Please select a table first.');
+                return;
+            }
+
+            const primaryKeyValue = primaryKeyInput.value.trim();
+            if (!primaryKeyValue) {
+                alert('Please enter a primary key value.');
+                return;
+            }
+
+            fetch(`/Management/GetRecord?table=${selectedTable}&id=${primaryKeyValue}`)
+                .then(response => response.json())
+                .then(record => {
+                    if (record) {
+                        formFields.innerHTML = '';
+                        tableSchemas[selectedTable].forEach(field => {
+                            const fieldHtml = `
+                                <div style="margin-bottom: 15px;">
+                                    <label for="${field.name}" style="font-weight: bold;">${field.label}:</label>
+                                    <input type="text" id="${field.name}" name="${field.name}" value="${record[field.name] || ''}" ${field.readonly ? 'readonly' : ''} style="width: 100%; padding: 10px; border: 1px solid #616161; border-radius: 4px;" />
+                                </div>`;
+                            formFields.insertAdjacentHTML('beforeend', fieldHtml);
+                        });
+                        editForm.style.display = 'block';
+                    } else {
+                        alert('No record found with the provided primary key.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching record:', error);
+                    alert('An error occurred while fetching the record.');
+                });
+        });
+    });
+</script>
+
+<style>
+    .table-button {
+        padding: 10px 20px;
+        border: 1px solid #007bff;
+        background-color: #007bff;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .table-button:hover {
+            background-color: #0056b3;
+        }
+</style>
