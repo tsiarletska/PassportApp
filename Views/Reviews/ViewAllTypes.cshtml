@@ -72,16 +72,13 @@
                 const currentSort = this.classList.contains('sort-asc') ? 'asc' :
                                    this.classList.contains('sort-desc') ? 'desc' : null;
 
-                // Reset all headers
                 headers.forEach(h => {
                     h.classList.remove('sort-asc', 'sort-desc');
                 });
 
-                // Determine new sort direction
                 let newSort = currentSort === 'asc' ? 'desc' : 'asc';
                 this.classList.add(`sort-${newSort}`);
 
-                // Sort the rows
                 const rows = Array.from(table.querySelectorAll('tbody tr'));
                 rows.sort((a, b) => {
                     const aValue = a.querySelector(`td:nth-child(${Array.from(headers).indexOf(this) + 1})`).textContent;
