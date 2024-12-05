@@ -47,22 +47,18 @@
                 const currentSort = this.classList.contains('sort-asc') ? 'asc' :
                                    this.classList.contains('sort-desc') ? 'desc' : null;
 
-                // Reset all headers
                 headers.forEach(h => {
                     h.classList.remove('sort-asc', 'sort-desc');
                 });
 
-                // Determine new sort direction
                 let newSort = currentSort === 'asc' ? 'desc' : 'asc';
                 this.classList.add(`sort-${newSort}`);
 
-                // Sort the rows
                 const rows = Array.from(table.querySelectorAll('tbody tr'));
                 rows.sort((a, b) => {
                     const aValue = a.querySelector(`td:nth-child(${Array.from(headers).indexOf(this) + 1})`).textContent;
                     const bValue = b.querySelector(`td:nth-child(${Array.from(headers).indexOf(this) + 1})`).textContent;
 
-                    // Handle different data types    // eleted here second colunn from
                     if (column === 'Birthday') {
                         return newSort === 'asc'
                             ? new Date(aValue) - new Date(bValue)
@@ -74,7 +70,6 @@
                         : bValue.localeCompare(aValue);
                 });
 
-                // Reinsert sorted rows
                 const tbody = table.querySelector('tbody');
                 rows.forEach(row => tbody.appendChild(row));
             });
